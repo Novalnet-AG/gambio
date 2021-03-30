@@ -1,0 +1,25 @@
+.form-group:nth-child(0) {
+  display: none;}
+
+span #notification_buyer_wrap{
+
+word-break : break-all;
+
+}
+
+table#novalnet_instalment_table_invoice , table#novalnet_instalment_table_sepa{
+  padding : 10px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table#novalnet_instalment_table_invoice td,table#novalnet_instalment_table_sepa td, table#novalnet_instalment_table_invoice th,table#novalnet_instalment_table_sepa th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+table#novalnet_instalment_table_invoice tr:nth-child(even),table#novalnet_instalment_table_sepa tr:nth-child(even) {
+  background-color: #dddddd;
+}

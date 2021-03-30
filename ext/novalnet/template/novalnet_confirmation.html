@@ -1,0 +1,12 @@
+<script language="javascript"> {literal}window.onload = function(){document.forms["frm"].submit()} {/literal}
+</script>
+<div{if $LIGHTBOX == 'true'} id="lightbox_content"{/if}>
+	<div id="gm_checkout_confirmation" class="order_confirm{if $LIGHTBOX == 'true'} lightbox_block{/if}">
+		<form action="{$NOVALNET_URL}" name="frm" id="frm" method="POST" target="_self">
+			{foreach from=$NOVALNET_PARAMS key=k item=v}
+			   <input type='hidden' name='{$k}' value='{$v}'>
+			{/foreach}
+			{$NOVALNET_DESCRITPTION}
+		</form>
+    </div>
+</div>
